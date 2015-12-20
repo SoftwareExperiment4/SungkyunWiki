@@ -1,43 +1,47 @@
-# Windows image file caches
-Thumbs.db
-ehthumbs.db
+*.pyc
+build
+dist
+*.egg-info
+testproject/testproject/whoosh_index/
+testproject/testproject/xapian_index/
 
-# Folder config file
-Desktop.ini
+# Ignore compiled version of source language
+wiki/locale/en/LC_MESSAGES/django.mo
 
-# Recycle Bin used on file shares
-$RECYCLE.BIN/
+# Ignore this folder which is created by tests
+wiki/attachments
 
-# Windows Installer files
-*.cab
-*.msi
-*.msm
-*.msp
+#PyCharm
+.idea
 
-# Windows shortcuts
-*.lnk
 
-# =========================
-# Operating System Files
-# =========================
+#Docs
+docs/_build
+docs/_build/*
 
-# OSX
-# =========================
+# Test project
+testproject/testproject/settings/local.py
+testproject/testproject/media/*
 
-.DS_Store
-.AppleDouble
-.LSOverride
+# Installer logs
+pip-log.txt
 
-# Thumbnails
-._*
+# Unit test / coverage reports
+.coverage
+.tox
 
-# Files that might appear on external disk
-.Spotlight-V100
-.Trashes
+#Eclipse
+.project
+.pydevproject
+.settings
 
-# Directories potentially created on remote AFP share
-.AppleDB
-.AppleDesktop
-Network Trash Folder
-Temporary Items
-.apdisk
+#Virtualenv
+virtualenv
+.venv
+
+#Mr Developer
+.mr.developer.cfg
+
+# text editors
+*~
+*.swp
